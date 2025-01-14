@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="UpdateActivity">
+
+    <TextView
+        android:text="School Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/schoolNameETUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Enter school name" />
+
+    <TextView
+        android:text="Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/addressETUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:hint="Enter address" />
+
+    <TextView
+        android:text="Latitude, Longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/coordinateETUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:hint="Enter coordinates" />
+
+    <Button
+        android:onClick="updateData"
+        android:text="Update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapViewUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:mapbox_cameraTargetLat="-0.04086590978965981"
+        app:mapbox_cameraTargetLng="109.341742322959"
+        app:mapbox_cameraZoom="13"/>
+
+</LinearLayout>
